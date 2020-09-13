@@ -9,6 +9,10 @@
     <circle cx="115" cy="85" r="85"  fill="#8ea472" class="leaves"/>
     <circle cx="195" cy="105" r="65" fill="#9cb181" class="leaves"/>
 
+    <circle cx="50" cy="90" r="15" fill="#bf4141" class="leaves"/>
+
+    <circle cx="160" cy="120" r="15" fill="#bf4141" class="leaves"/>
+
     <style>
       svg:hover .apple, svg:hover .leaves { animation-play-state: running; } 
 
