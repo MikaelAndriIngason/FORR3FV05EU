@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="300" height="350" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+    <circle cx="195" cy="105" r="15" fill="#bf4141" class="apple"/>
+
+    <path d="M 100 130 h 25 l 15 190 H 85 90" fill="#7e654a"/>
+    <path d="M 60 320 Q 110 275 170 320" fill="#7e654a"     />
+    <circle cx="60" cy="110" r="60"  fill="#788c60" class="leaves"/>
+    <circle cx="115" cy="85" r="85"  fill="#8ea472" class="leaves"/>
+    <circle cx="195" cy="105" r="65" fill="#9cb181" class="leaves"/>
+
+    <style>
+      svg:hover .apple, svg:hover .leaves { animation-play-state: running; } 
+
+      .apple   { animation: drop 1.5s ease-in infinite; animation-play-state: paused;     }
+
+      .leaves { animation: leaves 1.5s linear infinite; animation-play-state: paused; }
+
+      @keyframes drop { 
+        20%   { transform: translateY(0px);       }
+        35%  { transform: translateY(200px);      }
+        40%  { transform: translate(20px, 180px); }
+        45%  { transform: translate(30px, 200px); }
+        50%  { transform: translate(40px, 190px); }
+        55%  { transform: translate(50px, 200px); }
+        75% { transform: translate(120px, 200px);  }
+        100% { transform: translate(120px, 200px); }
+      }
+
+      @keyframes leaves {
+        0%   { transform: translateX(0px);  }
+        5%  { transform: translateX(-10px); }
+        10%  { transform: translateX(0px);  }
+        15%  { transform: translateX(10px); }
+        20% { transform: translateX(0px);   }
+      }
+    </style>
+
+</svg>
